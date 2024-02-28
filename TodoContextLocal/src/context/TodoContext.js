@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { createContext } from "react";
 
-export default TodoContext=createContext({
+export const TodoContext=createContext({
     todos:
         [{
             id:1,
@@ -14,7 +14,7 @@ export default TodoContext=createContext({
     toogleTodo:(id)=>{},
 })
 
-export const todoProvider=TodoContext.Provider
+export const TodoProvider=TodoContext.Provider
 
 export const useTodo=()=>{
     return useContext(TodoContext)
